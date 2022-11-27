@@ -4,7 +4,6 @@ max_index = 0
 max_number = list_numbers[max_index]  # Пусть первое число в списке будет максимальным
 
 for i, current_number in enumerate(list_numbers):  # Перебираем каждое число из списка
-    max_number = list_numbers[max_index]
     if current_number >= max_number:  # Если текущее число, больше или равно максимальному, то
         max_index = i  # то перезапишем индекс для максимального последнего числа
         max_number = current_number  # и перезапишем последнее максимальное число
