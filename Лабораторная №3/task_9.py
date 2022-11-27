@@ -5,7 +5,7 @@ increase = 0.03  # рост цен
 
 money_capital = 0  # количество денег, чтобы прожить 10 месяцев
 
-for i in range(1, months + 1):
+for i in range(months):
     money_capital += spend - salary  # Найдем разницу между затратами и доходом и просуммируем,
     spend *= 1 + increase  # Учитывая увеличивающиеся ежемесячно на 3 % расходы
 
