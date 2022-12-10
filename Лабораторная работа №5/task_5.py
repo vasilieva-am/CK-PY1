@@ -1,4 +1,3 @@
-
 import string
 from random import sample
 def get_random_password(n=8) -> str:
