@@ -6,3 +6,4 @@ def get_random_password(n=8) -> str:
     return "".join(sample(list_alfabet, n))
 
 print(get_random_password())
+
