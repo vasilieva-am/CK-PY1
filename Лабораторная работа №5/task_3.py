@@ -1,12 +1,10 @@
 from random import randint
-def get_unique_list_numbers() -> list[int]:
+def get_unique_list_numbers(start = -10, end = 10, list_size = 15) -> list[int]:
     list_numbers = []
-    list_size = 15
     while len(list_numbers) < list_size:
-        number = randint(-10, 10)
+        number = randint(start, end)
         if number not in list_numbers:
             list_numbers.append(number)
-    return list_numbers
 
 list_unique_numbers = get_unique_list_numbers()
 print(list_unique_numbers)
