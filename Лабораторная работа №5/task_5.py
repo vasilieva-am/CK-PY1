@@ -1,8 +1,8 @@
-import string
+from string import ascii_lowercase,ascii_uppercase,digits
 from random import sample
 def get_random_password(n=8) -> str:
-    list_alfabet = list(string.ascii_lowercase) + list(string.ascii_uppercase) + list(string.digits)
-    return "".join(sample(list_alfabet, n))
+    alfabet = ascii_lowercase + ascii_uppercase + digits
+    return "".join(sample(alfabet, n))
 
 print(get_random_password())
 
