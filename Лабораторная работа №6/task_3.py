@@ -2,21 +2,10 @@ OUTPUT_FILE = "output.csv"
 
 def to_csv_file(OUTPUT_FILE,headers=[],rows=[],delimiter=",",new_line="\n"):
     with open(OUTPUT_FILE, "w") as f:
-        for name in headers:
-            if name == headers[-1]:
-                f.write(str(name))
-            else:
-                f.write(str(name) + delimiter)
-        f.write(new_line)
-
-        for row in rows:
-            for value in row:
-                if value == row[-1]:
-                    f.write(str(value))
-                else:
-                    f.write(str(value) + delimiter)
-            f.write(new_line)
-
+        f.write(delimiter.join(headers)+new_line)
+        for i in rows:
+            f.writelines(delimiter.join(i)+new_line)
+            
 headers_list = ['longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income', 'median_house_value']
 data = [
     ['-122.050000', '37.370000', '27.000000', '3885.000000', '661.000000', '1537.000000', '606.000000', '6.608500', '344700.000000'],
