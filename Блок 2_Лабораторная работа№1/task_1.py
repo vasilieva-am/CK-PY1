@@ -30,6 +30,7 @@ class Runner:
         """
         Функция, которая определяет вероятность победы в забеге и получение главного приза
         :return: Вероятность победы
+        
         Примеры:
         >>> runner_1 = Runner(8,3,1000)
         >>> runner_1.probability_of_getting_prizes()
@@ -40,7 +41,8 @@ class Runner:
         """
         Функция, которая определяет какой выигрыш получит бегун
         :return: Сумма выигрыша
-        Примеры:
+       
+       Примеры:
         >>> runner_1 = Runner(8,3,1000)
         >>> runner_1.getting_reward()
         """
@@ -144,3 +146,5 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod()
     pass
+
+
