@@ -1,5 +1,4 @@
 class Potion:
-
     def __init__(self, name: str, toxicity: int, fight_application: bool):
         """
         Базовый класс "Зелье"
